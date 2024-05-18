@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="offset-2 col-8 mt-5">
+        <form>
+            <h1 class="text-center text-primary">Calculate Sum</h1>
+            <div class="form-group">
+              <label for="number1">Number 1</label>
+              <input type="number" class="form-control" id="number1" #number1 (change)="changeNumber1(number1.value)">
+            </div>
+            <div class="form-group">
+              <label for="number2">Number 2</label>
+              <input type="number" class="form-control" id="number2" #number2 (change)="changeNumber2(number2.value)">
+            </div> 
+            <!-- <button type="submit" class="btn btn-primary">Calcul</button> -->
+            Result is : {{ sum() }}
+          </form>
+    </div>
+</div>
